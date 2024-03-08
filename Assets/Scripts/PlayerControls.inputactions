@@ -1,0 +1,183 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "4b251e02-c9ed-47e5-9a1a-3dafd16c9bb2",
+            "actions": [
+                {
+                    "name": "Basic_Move",
+                    "type": "Value",
+                    "id": "38889d0b-8c0e-45b6-bba9-8ab0ff7fb3d8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Value",
+                    "id": "b98c6fde-d0d0-43e6-b28b-00d7345b3883",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Interaction",
+                    "type": "Button",
+                    "id": "15f6ebe1-1e78-420d-b37a-98e65bbf9012",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Flashlight",
+                    "type": "Button",
+                    "id": "c2076174-f36b-4f58-80fa-2a2fcc71ad5c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "0f60b193-a9fa-480f-9b89-77415688a663",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Basic_Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "5bc3cb81-24e4-4858-83f8-04fc70ee6b20",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "Basic_Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "4162b017-6329-406a-be7a-621d59afdb2f",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "Basic_Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "d11ab80e-c1ae-4aae-bdcc-8a80ef66297f",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "Basic_Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "238c4077-b76c-4f26-9454-2e918a3e7f88",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "Basic_Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2afa218f-dc23-412b-8436-6adc513530f6",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ab6ab95f-d470-4542-9369-2edf465f1c3b",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "Interaction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7835287-a22c-498f-91de-14bd33dcdb95",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "Flashlight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "806a3c93-2aa4-48f8-ae03-31ef1a717506",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "e3d3f7b1-6496-430b-ad6c-11d8eff3b3c7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "59ba8f05-a987-45e2-948d-82c4a258b3c9",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Teclado/Mouse",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Teclado/Mouse",
+            "bindingGroup": "Teclado/Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
